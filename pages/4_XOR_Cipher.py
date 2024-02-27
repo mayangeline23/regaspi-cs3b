@@ -1,3 +1,5 @@
+import streamlit as st
+
 def xor_encrypt(plaintext, key):
     """Encrypts plaintext using XOR cipher with the given key, printing bits involved."""
     
