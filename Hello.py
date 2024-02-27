@@ -8,7 +8,7 @@ def run():
         page_title="Hello",
         page_icon="👋",
     )
-
+    
     st.write("# Welcome to Streamlit! 👋")
     st.write("by: May Angeline Regaspi")
     st.sidebar.success("Select a demo above.")
