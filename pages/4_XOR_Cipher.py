@@ -24,20 +24,18 @@ def xor_decrypt(ciphertext, key):
     return xor_encrypt(ciphertext, key) # XOR decription is the same as encryption
 
 # Example usage:
-plaintext = bytes(input().encode())
-key = bytes(input().encode())
+plaintext = bytes(st.text_area("Plaintext:").encode())
+key = bytes(st.text_area("Key:").encode())
 
-if len(plaintext) >= len(key):
-    if plaintext != key:
-        cipher = xor_encrypt(plaintext, key)
-        print("Ciphertext:", "".join([f"{chr(byte_val)}" for byte_val in cipher]))
-        
-        decrypt = xor_decrypt(cipher, key)
-        print("Decrypted:", "".join([f"{chr(byte_val)}" for byte_val in decrypt]))
+if st.button("Encrypt!"):
+    if len(plaintext) >= len(key):
+        if plaintext != key:
+            cipher = xor_encrypt(plaintext, key)
+            print("Ciphertext:", "".join([f"{chr(byte_val)}" for byte_val in cipher]))
+            
+            decrypt = xor_decrypt(cipher, key)
+            print("Decrypted:", "".join([f"{chr(byte_val)}" for byte_val in decrypt]))
+        else:
+            print("Plaintext should not be equal to the key")
     else:
-        print("Plaintext should not be equal to the key")
-else:
-    print("Plaintext length should be equal or greater than the length of key")
-        
-        
-  
+        print("Plaintext length should be equal or greater than the length of key")
