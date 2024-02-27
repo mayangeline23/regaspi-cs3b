@@ -25,7 +25,7 @@ def run():
     )
 
     st.write("# Welcome to Streamlit! 👋")
-
+    st.write("by: May Angeline Regaspi")
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
@@ -45,7 +45,5 @@ def run():
         - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
     """
     )
-
-
 if __name__ == "__main__":
     run()
