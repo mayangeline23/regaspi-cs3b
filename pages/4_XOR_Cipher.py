@@ -2,6 +2,7 @@ import streamlit as st
 
 def xor_encrypt(plaintext, key):
     """Encrypts plaintext using XOR cipher with the given key."""
+    
     ciphertext = bytearray()
     for i in range(len(plaintext)):
         plaintext_byte = plaintext[i]
@@ -15,7 +16,7 @@ def xor_decrypt(ciphertext, key):
     return xor_encrypt(ciphertext, key) # XOR decryption is the same as encryption
 
 def main():
-    st.title("XOR Cipher Encryption and Decryption")
+    st.title("XOR Cipher")
     
     plaintext = st.text_input("Enter plaintext:")
     key = st.text_input("Enter key:")
