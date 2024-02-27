@@ -18,8 +18,8 @@ def xor_decrypt(ciphertext, key):
 def main():
     st.title("XOR Cipher")
     
-    plaintext = st.text_area("Enter plaintext:")
-    key = st.text_area("Enter key:")
+    plaintext = st.text_area("Plaintext:")
+    key = st.text_area("key:")
     
     if st.button("Encrypt"):
         plaintext_bytes = bytes(plaintext.encode())
