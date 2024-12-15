@@ -2,7 +2,7 @@
 
 by: May Angeline Regaspi
 
-[My Streamlit App](https://regaspi-cs3b.streamlit.app/)
+[My Streamlit App](https://fphealthdiseaseprediction.streamlit.app/)
 
 This is the app you get when you run `streamlit hello`, extracted as its own app.
 
